@@ -19,21 +19,12 @@ os.chdir(os.environ['HOME'])
 for i in commands:
     os.system(i)
 
+Error = False
 try:
-    Error = False
-    if all([
-            System.is_in_home('buildozer'),
-            System.is_in_home('.buildozer'),
-            System.is_in_bin('buildozer'),
-            ]):
-        try:
-            import Cython
-        except:
-            Error = True
-    else:
-        Error = True
-
-finally:
-    msg = 'GL## Done...'
-    if Error:msg = 'RL## Error...'
-    print(Design.Color.reader(msg))
+    import Cython
+except:
+    Error = True
+       
+msg = 'GL## Done...'
+if Error:msg = 'RL## Error...'
+print(Design.Color.reader(msg))
