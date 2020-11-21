@@ -27,4 +27,4 @@ except:
        
 msg = '[$LGREEN]# Done...[$/]'
 if Error:msg = '[$LRED]# Error...[$/]'
-print(Design.Color.reader(msg))
+print(Design.Color().reader(msg))
