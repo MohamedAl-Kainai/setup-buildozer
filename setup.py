@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 import os
-from N4Tools import System,Design
+from N4Tools import Design
 
 commands = [
     'sudo apt-get install python3-setuptools',
@@ -25,6 +25,6 @@ try:
 except:
     Error = True
        
-msg = 'GL## Done...'
-if Error:msg = 'RL## Error...'
+msg = '[$LGREEN]# Done...[$/]'
+if Error:msg = '[$LRED]# Error...[$/]'
 print(Design.Color.reader(msg))
