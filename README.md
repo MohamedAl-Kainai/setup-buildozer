@@ -9,7 +9,7 @@ sudo apt-get install git
 
 2 - Download setup-buildozer
 ```bash
-git clone https://github.com/No-Name-404/setup-buildozer/
+git clone https://github.com/MohamedAl-Kainai/setup-buildozer/
 cd setup-buildozer
 ```
 
